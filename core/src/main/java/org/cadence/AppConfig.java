@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan(basePackages = "org.cadence")
 public class AppConfig {
 
-    // == bean methods == : these are useful when you need have additional configuration for the bean
+    // == bean methods ==
 
     @Bean
     public NumberGenerator numberGenerator(){
