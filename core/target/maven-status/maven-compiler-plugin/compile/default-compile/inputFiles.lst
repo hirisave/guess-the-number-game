@@ -2,4 +2,6 @@
 /Users/hirisave/IdeaProjects/guess-the-number-game/core/src/main/java/org/cadence/Game.java
 /Users/hirisave/IdeaProjects/guess-the-number-game/core/src/main/java/org/cadence/NumberGeneratorImpl.java
 /Users/hirisave/IdeaProjects/guess-the-number-game/core/src/main/java/org/cadence/NumberGenerator.java
-/Users/hirisave/IdeaProjects/guess-the-number-game/core/src/main/java/org/cadence/Main.java
+/Users/hirisave/IdeaProjects/guess-the-number-game/core/src/main/java/org/cadence/MessageGeneratorImpl.java
+/Users/hirisave/IdeaProjects/guess-the-number-game/core/src/main/java/org/cadence/MessageGenerator.java
+/Users/hirisave/IdeaProjects/guess-the-number-game/core/src/main/java/org/cadence/AppConfig.java

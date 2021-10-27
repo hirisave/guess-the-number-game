@@ -1,4 +1,4 @@
-package org.cadence;
+package org.cadence.hub.game;
 
 public interface Game {
     int getNumber();
@@ -7,6 +7,7 @@ public interface Game {
     int getSmallest();
     int getBiggest();
     int getRemainingGuesses();
+    int getGuessCount();
     void reset();
     void check();
     boolean isValidNumberRange();

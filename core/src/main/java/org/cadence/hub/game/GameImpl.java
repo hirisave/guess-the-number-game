@@ -1,5 +1,7 @@
-package org.cadence;
+package org.cadence.hub.game;
 
+import org.cadence.hub.number.NumberGenerator;
+import org.cadence.qualifiers.GuessCount;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +16,9 @@ public class GameImpl implements Game{
     // == fields ==
     @Autowired
     private NumberGenerator numberGenerator;
-    private final int guessCount = 10;
+    @Autowired
+    @GuessCount
+    private int guessCount;
     private int number;
     private int guess;
     private int smallest;
@@ -69,6 +73,11 @@ public class GameImpl implements Game{
     @Override
     public int getRemainingGuesses() {
         return remainingGuesses;
+    }
+
+    @Override
+    public int getGuessCount() {
+        return guessCount;
     }
 
     @Override

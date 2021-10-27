@@ -1,5 +1,7 @@
-org/cadence/Main.class
+org/cadence/MessageGeneratorImpl.class
 org/cadence/Game.class
+org/cadence/MessageGenerator.class
+org/cadence/AppConfig.class
 org/cadence/NumberGeneratorImpl.class
 org/cadence/GameImpl.class
 org/cadence/NumberGenerator.class

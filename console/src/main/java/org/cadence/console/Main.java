@@ -1,5 +1,8 @@
-package org.cadence;
+package org.cadence.console;
 
+import org.cadence.config.AppConfig;
+import org.cadence.hub.message.MessageGenerator;
+import org.cadence.hub.number.NumberGenerator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -21,8 +24,11 @@ public class Main {
         int number = numberGenerator.next();
         log.info("number = {}", number);
 
-        //get the game bean from context (container)
-        Game game = context.getBean(Game.class);
+        //get the message generator bean from context (container)
+        MessageGenerator messageGenerator = context.getBean(MessageGenerator.class);
+
+        log.info(messageGenerator.getMainMessage());
+        log.info(messageGenerator.getResultMessage());
 
         //call reset method
         //game.reset();

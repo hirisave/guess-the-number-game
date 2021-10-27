@@ -1,4 +1,7 @@
-package org.cadence;
+package org.cadence.hub.number;
+
+import org.cadence.qualifiers.MaxNumber;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Random;
 
@@ -6,7 +9,10 @@ public class NumberGeneratorImpl implements NumberGenerator{
 
     //== fields ==
     private final Random random = new Random();
-    private final int maxNumber = 100;
+
+    @Autowired
+    @MaxNumber
+    private int maxNumber;
 
     //== public methods ==
     @Override
@@ -16,6 +22,6 @@ public class NumberGeneratorImpl implements NumberGenerator{
 
     @Override
     public int getMaxNumber() {
-        return 0;
+        return maxNumber;
     }
 }
