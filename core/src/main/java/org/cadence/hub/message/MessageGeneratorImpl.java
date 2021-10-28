@@ -28,6 +28,7 @@ public class MessageGeneratorImpl implements MessageGenerator{
     }
 
     @Override
+    //ToDo: code cleanup
     public String getResultMessage() {
         if (game.isGameWon()) {
             return "You guessed it! The number was " + game.getNumber();
